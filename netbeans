@@ -1,0 +1,110 @@
+package javaapplication1;
+
+import java.util.Scanner;
+
+
+public class JavaApplication1 {
+
+   
+    public static void main(String[] args) {
+       
+        Scanner ler = new Scanner(System.in);
+        
+        int p; 
+        int d1;
+        int d2;
+        int par_alice = 0;
+        int impar_alice = 0;
+        int escolha_alice;
+        int soma;
+        int resultado;
+        int impar;
+       
+        
+        
+        System.out.println(" Caso alice seja par digite 0, caso for ímpar tecle 1 ?");
+        
+        escolha_alice = ler.nextInt();
+        
+        
+      
+      
+        while(escolha_alice < 0 || escolha_alice > 1) {
+           
+           
+             System.out.println(" Caso alice seja par digite 0, caso for ímpar tecle 1 ?");
+        
+             escolha_alice = ler.nextInt();
+          
+            
+            
+     }
+         
+        
+        System.out.println("Qual foi a jogada de Bob");
+        
+        d1 = ler.nextInt();
+        
+          while(d1 < 0 || d1 > 5) {
+           
+           
+             System.out.println(" Qual foi a jogado do Bob ?");
+        
+            d1 = ler.nextInt();
+          
+            
+            
+     }
+        
+         System.out.println("Qual foi a jogada de Alice");
+         
+        
+        d2 = ler.nextInt();
+        
+        
+         
+          while(d2 < 0 || d2 > 5) {
+           
+           
+             System.out.println(" Qual foi a jogado do Alice?");
+        
+            d2 = ler.nextInt();
+          
+            
+            
+     }
+        
+        
+        soma = d1 + d2 ; 
+        
+        
+        if (soma % 2 == 0  ){
+            
+            par_alice = +1;
+        }
+        
+        else {  
+            impar_alice = +1;
+                
+        
+        }
+        
+         if (escolha_alice ==0 && par_alice>0){
+             
+             System.out.println(0);
+         
+         }
+        
+         else if ( escolha_alice !=0 && impar_alice > 0 ){
+        
+             System.out.println(0);
+         }
+         else {
+         
+             System.out.println(1);
+         }
+        
+        
+  }
+        
+    }
